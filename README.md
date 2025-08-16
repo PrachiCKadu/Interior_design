@@ -25,14 +25,12 @@
 ## 📁 Folder Structure
 
 Home_Interior/
-├── css/ # CSS files
-├── js/ # JavaScript files
-├── images/ # Ball images
-├── index.php # Homepage
-└── README.md # Project documentation
+├── css/ style.css
+├── js/ script.js
+├── images/ 
+├── index.php Homepage
+└── README.md 
 
-
----
 
 ## 💡 Future Enhancements
 - Add interactive gallery with filters
