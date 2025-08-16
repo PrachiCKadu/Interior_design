@@ -20,17 +20,6 @@
 - **Database:** MySQL
 - **Version Control:** Git & GitHub
 
----
-
-## 📁 Folder Structure
-
-Home_Interior/
-├── css/ style.css
-├── js/ script.js
-├── images/ 
-├── index.php Homepage
-└── README.md 
-
 
 ## 💡 Future Enhancements
 - Add interactive gallery with filters
