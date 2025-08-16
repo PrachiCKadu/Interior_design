@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar{
+  width: .4rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #ffd500;
+  border-radius: 5rem;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+/* header section starts */
+.heading{
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.save span{
+    color: #ffd500;
+    font-size: 5rem;
+}
+
+.header{
+    display: flex;
+    background: black;
+    opacity: .5;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .navbar{
+    margin-left: 51%;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+h5{
+  color: white;
+  text-transform: none;
+  margin-left: 5%;
+  text-shadow: 0 0 20px whitesmoke;
+}
+
+h5:hover{
+  /* color: #ffd500; */
+  color: red;
+}
+
+button{
+  font-size: 1rem;
+  color:black;
+  text-decoration: none;
+  background: #ffd500;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 0 5px;
+} 
+
+.button:hover{
+  letter-spacing: .1rem;
+} 
+
+.header .navbar a:hover{
+    color:  #ffd500;
+    border-bottom: .1rem solid  #ffd500;
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+#menu-btn{
+    display: none;
+}
+/* header section ends */
+
+/* home section starts */
+.home .hero{
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background:rgba(0,0,0,0.5) url(https://www.mymodernhome.com/media/images/My_Modern_Home_Plan.2e16d0ba.fill-1920x1080.format-webp_TvTzDWv.webp);
+  background-blend-mode: darken;
+}
+
+  .home .row{
+    margin:0;
+  }
+  
+  .home .hero .text1{
+    font-size: 5rem;
+    width:45rem;
+    background:#fff;
+    padding:1rem;
+    text-align: center;
+    opacity: .8;
+  }
+  
+  .home .hero .text2{
+    font-size: 3rem;
+    width:35rem;
+    background:#ffd500;
+    padding:1rem;
+    text-align: center;
+    opacity: .8;
+    margin-top: 1rem;
+    color:black;
+  }
+ /* home section ends  */
+
+/* about section starts */
+.about{
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  background-color: #0e1111;
+  min-width: 100vw;
+}
+
+.about .image{
+  padding:2rem;
+}
+
+.about .image img{
+  height:45rem;
+  object-fit: cover;
+  box-shadow: 2.5rem 2.5rem 0 1rem #232b2b;
+}
+
+.about .info{
+  padding:2rem;
+  margin-top: 3rem;
+}
+
+.about .info h2{
+  color:#ffd500;
+  font-size: 3rem;
+}
+
+.about .info p{
+  font-size: 1.4rem;
+  color:#fff;
+  margin:2rem 0;
+}
+
+.about .info .icons a{
+  font-size: 2rem;
+  height: 4rem;
+  width:4rem;
+  line-height: 4rem;
+  text-align: center;
+  background:#333;
+  color:#fff;
+  border-radius: .5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.about .heading{
+  color: #ffd500;
+  text-shadow: 0 0 20px#ffc400;
+}
+
+.about .info .icons a:hover{
+  background:#ffd500;
+}
+/* about section ends */
+
+/* project section starts */
+.project{
+  min-height:100vh;
+  background-size: cover;
+  background:rgba(0,0,0,0.5) url(https://www.mymodernhome.com/media/images/My_Modern_Home_Plan.2e16d0ba.fill-1920x1080.format-webp_TvTzDWv.webp);
+  background-blend-mode: darken;
+}
+
+.project .heading{
+  color:#ffd500;
+  text-shadow: 0 0 20px#ffc400;
+}
+
+.project .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project .box-container .box{
+  height:20rem;
+  width:30rem;
+  border-radius: .5rem;
+  margin:2rem;
+  overflow: hidden;
+  box-shadow: 0 .3rem .5rem #000;
+}
+
+.project .box-container .box img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.project .box-container .box:hover img{
+  transform: scale(1.3);
+}
+/* project section ends */
+
+/* contact section starts */
+.contact{
+  min-height: 100vh;
+  background-color: #0e1111;
+}
+
+.contact .heading{
+  color: #ffd500;
+  text-shadow: 0 0 20px#ffc400;
+}
+
+.contact .form-container{
+  width:90%;
+  box-shadow: 0 0 20px #ffd500;
+  border-radius: .5rem;
+  padding:1rem 3rem;
+  margin-bottom: 2rem;
+  background-color: #232b2b;
+}
+
+.contact .form-container form input, textarea{
+  height:4.5rem;
+  padding:0 1rem;
+  margin:2rem 0;
+  font-size: 1.5rem;
+  box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
+  border:none;
+  outline: none;
+  color:#333;
+}
+
+.contact .form-container form .inputBox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .form-container form input[type="text"]{
+  width:49%;
+}
+
+.contact .form-container form input[type="email"]{
+  width:100%;
+  text-transform: lowercase;
+}
+
+.contact .form-container form textarea{
+  width:100%;
+  height:20rem;
+  padding:1rem;
+  resize: none;
+  overflow-y: auto;
+}
+
+.contact .form-container form input[type="submit"]{
+  background:#ffd500;
+  width:15rem;
+  color:black;
+  font-size: 2rem;
+}
+
+.contact .form-container form input[type="submit"]:hover{
+  opacity:.8;
+}
+/* contact section ends */
+
+
+/* media queries */
+@media (max-width:991px){
+  html{
+      font-size: 55%;
+  }
+
+  .header{
+      padding: 1.5rem 2rem;
+  }
+
+  section{
+      padding: 2rem;
+  }
+}
+
+@media (max-width:768px){
+  #menu-btn{
+      display: inline-block;
+  }
+
+  .header .navbar{
+      position: absolute;
+      top: 100%; right: -100%;
+      background: #fff;
+      width: 30rem;
+      height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active{
+      right: 0;
+  }
+
+  .header .navbar a{
+      color: black;
+      display: block;
+      margin: 1.5rem;
+      padding: .5rem;
+      font-size: 2rem;
+  }
+
+  .text{
+      background-position: left;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .text .content h3{
+      font-size: 4.5rem;
+  }
+
+  .text .content p{
+      font-size: 1.6rem;
+  }
+}
+
+@media (max-width:450px){
+  html{
+      font-size: 50%;
+  }
+}

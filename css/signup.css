@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;  
+   }
+
+body{
+    background:rgba(0,0,0,0.5)url(https://www.mymodernhome.com/media/images/My_Modern_Home_Plan.2e16d0ba.fill-1920x1080.format-webp_TvTzDWv.webp);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+ input[type="text"],input[type="email"],input[type="password"]{
+       display: block;
+       padding: 10px;
+       padding-bottom: 2px;
+       width: 260px;
+   }
+
+   .name,.email{
+       height: 25px;
+       width: 280px;
+       margin: 16px;
+       background: transparent;
+       outline: none;
+       border: none;
+       border-bottom: 2px solid white;
+       color: white;
+       font-size: 16px;
+       margin-top: 26px;
+   }
+
+   #password {
+    height: 25px;
+    width: 260px;
+    margin: 16px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 2px;
+    margin-top: 26px;
+}
+
+.child{
+    margin: auto;
+    border: 2px solid transparent;
+    background-color: rgba(255,255,255,0.2);
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    border-radius: 7px;
+    align-items: center;
+    box-shadow: 0 0 20px black;
+}
+
+.btn{
+    height: 35px;
+    width: 280px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(1, 12, 14, 0.945);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 5%;
+    background-color: #ffd500;
+  }
+
+.main{
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+  }
+ 
+.text{
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+}
+
+h1{
+    text-shadow: 0 0 20px #ffc400;
+    color: #ffd500;
+}
+
+input::placeholder{
+    color: white;   
+}
+
+.btn:hover{
+cursor: pointer;
+background-color: #ffc400;
+}
+
+i{
+    color: aliceblue;
+}
+
+.log{
+    color: #e01414;
+}
+
+.log:hover{
+    color: red;
+}

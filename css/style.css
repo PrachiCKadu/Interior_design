@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    background:rgba(0,0,0,0.5)url(https://www.mymodernhome.com/media/images/My_Modern_Home_Plan.2e16d0ba.fill-1920x1080.format-webp_TvTzDWv.webp);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.save span{
+    color: #ffd500;
+    font-size: 5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color:black;
+    background: #ffd500;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header .navbar .log-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .4rem 2rem;
+    font-size: 1.7rem;
+    color:black;
+    background: #ffd500;
+    cursor: pointer;
+    position: relative;
+    border-radius: 6px;
+}
+
+.header .navbar .log-btn:hover{
+    letter-spacing: .1rem;
+}
+
+.header{
+    background: black;
+    opacity: .5;
+    /* background: transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .navbar{
+    margin-left: 55%;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+.header .navbar a:hover{
+    color:  #ffd500;
+    border-bottom: .1rem solid  #ffd500;
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.text{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
+
+.text .content{
+    max-width: 60rem;
+}
+
+.text .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.text .content p{
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: whitesmoke;
+}
+
+
+/* key frames for fadding
+@keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+
+/* media queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .text{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text .content h3{
+        font-size: 4.5rem;
+    }
+
+    .text .content p{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}

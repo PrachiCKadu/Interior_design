@@ -1,0 +1,289 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;  
+   }
+
+body{
+    background:rgba(0,0,0,0.5)url(https://www.mymodernhome.com/media/images/My_Modern_Home_Plan.2e16d0ba.fill-1920x1080.format-webp_TvTzDWv.webp);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.header{
+    background: black;
+    opacity: .5;
+    /* background: transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .navbar{
+    margin-left: 55%;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    color: whitesmoke;
+}
+
+.header .navbar a:hover{
+    color:  #ffd500;
+    border-bottom: .1rem solid  #ffd500;
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+#menu-btn{
+    display: none;
+}
+
+ input[type="text"],input[type="email"],input[type="password"],input[type="tel"]{
+       display: block;
+       padding: 10px;
+       padding-bottom: 2px;
+       width: 260px;
+   }
+
+   .name,.email,.phone,.address{
+       height: 25px;
+       width: 280px;
+       margin: 16px;
+       background: transparent;
+       /* outline: none; */
+       /* border: none; */
+       /* border-bottom: 2px solid white; */
+       color: white;
+       font-size: 16px;
+       margin-top: 26px;
+   }
+
+   label{
+    color:#fff;
+    margin-right: 50%;
+   }
+
+img{
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+h6{
+    color: whitesmoke;
+    /* color: #ffc400; */
+}
+
+.profile:hover img{
+    transform: scale(1.1);
+  }
+
+.profile{
+    height: 350px;
+    width: 200px;
+    border: 2px solid #333;
+    border-radius: 7px;
+    align-items: center;
+    margin-left: 10%;
+    background-color: black;
+    box-shadow: 0 0 20px black;
+}
+
+.child{
+    margin: auto;
+    border: 2px solid #333;
+    /* background-color: rgba(255,255,255,0.2); */
+    background-color: black;
+    height: 350px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    /* justify-content: center;  */
+    border-radius: 7px;
+    /* align-items: center; */
+    box-shadow: 0 0 20px black;
+}
+
+.data{
+    display: flex;
+}
+
+.left{
+    margin-left: 2%;
+}
+
+.right{
+    /* display: flex; */
+    color: #e01414;
+    margin-left: 5%;
+    /* margin-bottom: 5%; */
+}
+
+button{
+    background-color: #ffc400;
+    color: black;
+    width: 45%;
+    height: 7%;
+    border-radius: 4px;
+    border-color: black;
+}
+
+button:hover{
+    background-color: #ffd500;
+    color: black;
+}
+
+.btns{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin-left: 15%;
+}
+
+.btn{
+    height: 35px;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(1, 12, 14, 0.945);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 5%;
+    background-color: #ffd500;
+    /* background-color: whitesmoke; */
+  } 
+
+.main{
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+  }
+ 
+.text{
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+}
+
+h2{
+    text-shadow: 0 0 20px #ffc400;
+    color: #ffd500;
+    margin-top: 6%;
+}
+
+input::placeholder{
+    color: white;   
+}
+
+.btn:hover{
+cursor: pointer;
+background-color: #ffc400;
+}
+
+i{
+    color: aliceblue;
+}
+
+.log{
+    color: #e01414;
+}
+
+.log:hover{
+    color: red;
+}
+
+
+/* media queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    .text{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile{
+        /* justify-content: left;
+        text-align: left; */
+        margin-left: 5%;
+    }
+
+    body{
+        overflow: hidden;
+        justify-content: left;
+    }
+
+    .text .content h3{
+        font-size: 4.5rem;
+    }
+
+    .text .content p{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
